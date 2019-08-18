@@ -17,11 +17,19 @@
 
 | บล็อกภาษาไทย | บล็อกภาษาอังกฤษ |
 |--|--|
-| ![ปลั๊กอิน ESP-NOW](https://sv1.picz.in.th/images/2019/08/17/Z9FQJk.png) | ![ESP-NOW Plugin for KidBrightIDE](https://sv1.picz.in.th/images/2019/08/17/Z9Fqfv.png) |
+| ![ปลั๊กอิน ESP-NOW](https://sv1.picz.in.th/images/2019/08/19/ZwJN0I.png) | ![ESP-NOW Plugin for KidBrightIDE](https://sv1.picz.in.th/images/2019/08/19/ZwJz8Z.png) |
+
+### บล็อกอ่านค่า MAC Address
+
+ใช้อ่านค่า MAC Address ของตัวเอง เพื่อใช้เป็นข้อมูลให้บอร์ดอื่นส่งข้อมมูลมาหาได้
 
 ### บล็อกส่งข้อมูล
 
 ใช้ส่งข้อความ ตัวเลข ไปยังบอร์ด KidBrightIDE ตัวอื่น (Broadcast)
+
+### บล็อกส่งข้อมูลไปยัง...
+
+ใช้ส่งข้อความ ตัวเลข ไปยังบอร์ด KidBrightIDE เฉพาะตัวที่กำหนด (Unicast) โดยใช้ MAC Address
 
 ### บล็อกเมื่อได้รับข้อมูล
 
