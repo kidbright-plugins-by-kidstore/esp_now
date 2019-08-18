@@ -21,7 +21,9 @@ static char recv_buff[256];
 
 class ESP_NOW_CLASS : public Device {
 	private:		
-		uint8_t macAddr[6] = { 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF };
+		uint8_t broadcastMACAddr[6] = { 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF };
+		char myMAC[20] ;
+		esp_now_peer_info_t slave;
 		
 	public:
 		// constructor
@@ -38,8 +40,11 @@ class ESP_NOW_CLASS : public Device {
 		bool prop_write(int index, char *value);
 		
 		// method
+		char* getMAC() ;
 		void send(char*) ;
 		void send(float) ;
+		void send(char*, char*) ;
+		void send(char*, float) ;
 		void onRecv(ESPNOWRecvCallback fn) ;
 		char* readString() ;
 		float readNumber() ;

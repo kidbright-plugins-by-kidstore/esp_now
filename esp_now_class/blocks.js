@@ -1,3 +1,15 @@
+Blockly.Blocks['esp_now.get_mac'] = {
+	init: function() {
+		this.jsonInit({
+			"message0": Blockly.Msg.ESPNOW_GET_MAC_MESSAGE,
+			"output": "String",
+			"colour": 60,
+			"tooltip": Blockly.Msg.ESPNOW_GET_MAC_TOOLTIP,
+			"helpUrl": "https://store.kidbright.info/"
+		});
+	}
+};
+
 Blockly.Blocks['esp_now.send'] = {
 	init: function() {
 		this.jsonInit({
@@ -16,6 +28,33 @@ Blockly.Blocks['esp_now.send'] = {
 			"nextStatement": null,
 			"colour": 60,
 			"tooltip": Blockly.Msg.ESPNOW_SEND_TOOLTIP,
+			"helpUrl": "https://store.kidbright.info/"
+		});
+	}
+};
+
+Blockly.Blocks['esp_now.send2'] = {
+	init: function() {
+		this.jsonInit({
+			"message0": Blockly.Msg.ESPNOW_SEND2_MESSAGE,
+			"args0": [{
+				"type": "input_value",
+				"name": "data",
+				"check": [
+					"Boolean",
+					"Number",
+					"String"
+				]
+			}, {
+				"type": "field_input",
+				"name": "mac",
+				"text": "FF:FF:FF:FF:FF:FF"
+			}],
+			"inputsInline": true,
+			"previousStatement": null,
+			"nextStatement": null,
+			"colour": 60,
+			"tooltip": Blockly.Msg.ESPNOW_SEND2_TOOLTIP,
 			"helpUrl": "https://store.kidbright.info/"
 		});
 	}
