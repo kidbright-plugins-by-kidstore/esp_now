@@ -6,7 +6,7 @@
 
 แนะนำให้ใช้โปรแกรม KidBrightIDE เวอร์ชั่นล่าสุด (New UI, Plugins beta version) มีขั้นตอนการติดตั้งดังนี้
 
- 1. ดาวน์โหลดไฟล์ปลั๊กอิน `esp-now-plugin-v1.0.zip` ได้ที่ด้านล่างของหน้านี้
+ 1. ดาวน์โหลดไฟล์ปลั๊กอิน `esp-now-plugin-v1.1.zip` ได้ที่ด้านล่างของหน้านี้
  2. เปิดโปรแกรม KidBrightIDE กด `Plugins > Install Plugins`
  3. เลือกไฟล์ปลั๊กอินที่ดาวน์โหลดไว้
  4. โปรแกรม KidBrightIDE จะปิดแล้วเปิดใหม่ บล็อกใหม่จะอยู่ในเมนู `เซ็นเซอร์วัดฝุ่น KidPM25` หรือ `KidPM25`
@@ -17,11 +17,19 @@
 
 | บล็อกภาษาไทย | บล็อกภาษาอังกฤษ |
 |--|--|
-| ![ปลั๊กอิน ESP-NOW](https://sv1.picz.in.th/images/2019/08/17/Z9FQJk.png) | ![ESP-NOW Plugin for KidBrightIDE](https://sv1.picz.in.th/images/2019/08/17/Z9Fqfv.png) |
+| ![ปลั๊กอิน ESP-NOW](https://sv1.picz.in.th/images/2019/08/19/ZwJN0I.png) | ![ESP-NOW Plugin for KidBrightIDE](https://sv1.picz.in.th/images/2019/08/19/ZwJz8Z.png) |
+
+### บล็อกอ่านค่า MAC Address
+
+ใช้อ่านค่า MAC Address ของตัวเอง เพื่อใช้เป็นข้อมูลให้บอร์ดอื่นส่งข้อมมูลมาหาได้
 
 ### บล็อกส่งข้อมูล
 
 ใช้ส่งข้อความ ตัวเลข ไปยังบอร์ด KidBrightIDE ตัวอื่น (Broadcast)
+
+### บล็อกส่งข้อมูลไปยัง...
+
+ใช้ส่งข้อความ ตัวเลข ไปยังบอร์ด KidBrightIDE เฉพาะตัวที่กำหนด (Unicast) โดยใช้ MAC Address
 
 ### บล็อกเมื่อได้รับข้อมูล
 
@@ -35,7 +43,7 @@
 
 ใช้อ่านตัวเลขที่ส่งมาจากบอร์ด KidBright บอร์ดอื่น กรณีข้อมูลที่รับมาจากบอร์ดอื่นไม่ใช่ตัวเลข จะให้ค่าเป็น 0
 
-## ตัวอย่างโปรแกรม
+## ตัวอย่างโปรแกรม 1
 
 ใช้บอร์ด KidBright ตัวที่ 1 ส่งค่าแสงที่วัดได้ ไปแสดงผลที่ KidBright ตัวที่สอง
 
@@ -50,6 +58,24 @@
 | บล็อกภาษาไทย | บล็อกภาษาอังกฤษ |
 |--|--|
 | ![Z9Iuee.png](https://sv1.picz.in.th/images/2019/08/17/Z9Iuee.png) | ![Z9In3l.png](https://sv1.picz.in.th/images/2019/08/17/Z9In3l.png) |
+
+## ตัวอย่างโปรแกรม 2
+
+ใช้บอร์ด KidBright ตัวที่ 1 ส่งตัวเลขไปบอร์ด KidBright ตัวที่ 2 และตัวที่ 3 (แต่ละตัว ได้รับข้อมูลไม่เหมือนกัน)
+
+### ฝั่งส่ง
+
+| บล็อกภาษาไทย | บล็อกภาษาอังกฤษ |
+|--|--|
+| ![ZKQ9uq.png](https://sv1.picz.in.th/images/2019/08/19/ZKQ9uq.png) | ![ZKQTMz.png](https://sv1.picz.in.th/images/2019/08/19/ZKQTMz.png) |
+
+หมายเหตุ: ต้องใช้ปลั๊กอิน theIO เพิ่มเติม
+
+### ฝั่งรับ
+
+| บล็อกภาษาไทย | บล็อกภาษาอังกฤษ |
+|--|--|
+| ![ZKQww8.png](https://sv1.picz.in.th/images/2019/08/19/ZKQww8.png) | ![ZKQ1DR.png](https://sv1.picz.in.th/images/2019/08/19/ZKQ1DR.png) |
 
 ## การแก้ปัญหาใช้งานไม่ได้
 
