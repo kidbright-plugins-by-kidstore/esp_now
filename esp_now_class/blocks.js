@@ -95,7 +95,7 @@ Blockly.Blocks['esp_now.read_number'] = {
 	init: function() {
 		this.jsonInit({
 			"message0": Blockly.Msg.ESPNOW_READ_NUMBER_MESSAGE,
-			"output": "String",
+			"output": "Number",
 			"colour": 60,
 			"tooltip": Blockly.Msg.ESPNOW_READ_NUMBER_TOOLTIP,
 			"helpUrl": "https://store.kidbright.info/"
